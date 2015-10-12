@@ -11,6 +11,6 @@ README
 ===========================
 ###页面截图
 ####pc版
-![](https://github.com/LUOrenjia/3D-Cube/blob/master/3dCube.gif)
+![](https://github.com/LUOrenjia/baidu-index-with-response/blob/master/pc%E7%89%88%E9%A1%B5%E9%9D%A2.png)
 ####移动版
-![](https://github.com/LUOrenjia/3D-Cube/blob/master/3dCube.gif)
+![](https://github.com/LUOrenjia/baidu-index-with-response/blob/master/%E7%A7%BB%E5%8A%A8%E7%89%88%E9%A1%B5%E9%9D%A2.png)
