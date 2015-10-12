@@ -1,0 +1,224 @@
+/*PC版所对应的样式*/
+
+html,
+body,
+.container {
+    margin: 0;
+    padding: 0;
+    font: 12px arial;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*在PC版上面不显示的内容*/
+
+.container .mobile-weather,
+.bg_logo_small,
+.mobile-nav,
+.web-site,
+.news,
+.life,
+.all,
+.setting,
+.version,
+.other {
+    display: none;
+}
+
+.container {
+    position: relative;
+    min-width: 810px;
+    min-height: 600px;
+    *height: 600px;
+    _width: expression((documentElement.clientWidth < 810) ? "810px": "auto");
+}
+
+
+/*主体内容样式*/
+
+.content {
+    margin: 0 auto;
+    position: relative;
+    top: 38.2%;
+}
+
+.content .content-container {
+    height: 191px;
+    position: relative;
+    top: -191px;
+}
+
+.content .content-container .bg_logo {
+    width: 100%;
+}
+
+.content .content-container .bg_logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.content .content-container .input {
+    height: 37px;
+    width: 641px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+
+/*这里有一个hack,用以解决ie6,7,8下输入框光标不能够垂直居中的问题*/
+
+.content .content-container .input .input_area {
+    padding: 0 0 0 5px;
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 534px;
+    height: 34px;
+    margin-right: 0;
+    border-right-width: 0;
+    float: left;
+    overflow: hidden;
+    line-height: 34px\9;
+    *line-height: 34px;
+    padding-left: 4px;
+    outline: none;
+}
+
+
+/*加入!important，解决点击过输入框后hover事件失效的问题*/
+
+.content .content-container .input .input_area:hover {
+    border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
+}
+
+.content .content-container .input .input_area:focus {
+    border-color: #38f;
+}
+
+.content .content-container .input .input_buttom {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    _border: none;
+    display: inline-block;
+    background-position: -120px -48px;
+    z-index: 0;
+    float: left;
+    vertical-align: top;
+}
+
+
+/*有一个hack ,解决ie6按钮下面有一条黑边的问题*/
+
+.content .content-container .input .input_buttom input {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #2d78f4;
+    *border-bottom: 0;
+    outline: medium;
+    cursor: pointer;
+}
+
+.content .content-container .input .input_buttom input:hover {
+    background-color: #2d78f4;
+}
+
+.content .content-container .bg_logo img {
+    height: 129px;
+    width: 270px;
+}
+
+
+/*导航栏样式*/
+
+.container .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 444px;
+    margin: 19px 0 5px 0;
+    float: right;
+    z-index: 3;
+}
+
+.container .nav a {
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 18px;
+    *margin-left: 12px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.container .nav .login,
+.container .nav .setting {
+    font-weight: normal
+}
+
+.container .nav a:hover {
+    color: #0000C6;
+}
+
+.container .nav .more {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    padding: 0 3px;
+    margin: 0 5px 0 15px;
+    background-color: #38f;
+}
+
+
+/*脚部样式*/
+
+.container .footer {
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.container .footer .footer-container .footer-up {
+    padding: 15px 0 5px 0;
+}
+
+.container .footer .footer-container .footer-up a {
+    color: #00c;
+    padding: 0 8px;
+}
+
+.container .footer .footer-container p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*脚部第二行字体颜色为灰色*/
+
+.container .footer .footer-container p,
+.container .footer .footer-container .footer-down a {
+    color: #666;
+}
+
+
+/*脚部右下角图标宽高*/
+
+.container .footer .footer-container .footer-down img {
+    height: 17px;
+    width: 17px;
+}

@@ -1,0 +1,452 @@
+/*移动版所对应的样式*/
+html,
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/*去掉a标签的下划线，设置颜色为黑色*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+/*在移动版上面不显示的内容*/
+.container .nav,
+.container .bg_logo,
+.container .footer .footer-container .footer-up,
+.container .footer .footer-container .footer-down {
+    display: none;
+}
+
+/*顶部天气 - start -*/
+.container .mobile-weather {
+    display: block;
+    height: 54px;
+    width: 100%;
+}
+
+.container .mobile-weather .weather-left {
+    margin-left: 10px;
+}
+
+.container .mobile-weather .weather-left .temp {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 48px;
+    font-size: 30px;
+    color: #818388;
+    text-align: left;
+}
+
+.container .mobile-weather .weather-icon,
+.weather-left {
+    display: inline-block;
+}
+
+.container .mobile-weather .weather-icon img {
+    width: 25px;
+}
+
+.container .mobile-weather .weather-shenzhen {
+    display: inline-block;
+    margin-top: 5px;
+    height: 25px;
+    width: 80px;
+    border-left: 1px solid #eee;
+}
+
+.container .mobile-weather .weather-shenzhen p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #7e818a;
+    margin: 0 0 0 5px;
+}
+
+.container .mobile-weather .weather-shenzhen .weather-more {
+    width: 14px;
+}
+
+.container .mobile-weather .user-icon {
+    display: inline-block;
+    float: right;
+}
+
+.container .mobile-weather .user-icon img {
+    width: 35px;
+    margin-top: 8px;
+}
+/*顶部天气 - end -*/
+
+/*搜索框部分 - strat -*/
+.content .content-container .bg_logo_small {
+    width: 175px;
+    margin: 0 auto;
+    padding: 17px 0;
+}
+
+.content .content-container .bg_logo_small img {
+    width: 175px;
+}
+
+.content .content-container .input {
+    height: 42px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.content .content-container .input .input_area {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    margin-right: -79px;
+    padding: 7px 42px 7px 6px;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+
+.content .content-container .input .input_buttom {
+    border-bottom: 1px solid transparent;
+    display: block;
+    background-position: -120px -48px;
+    z-index: 0;
+    float: left;
+    margin-right: 0;
+    vertical-align: top;
+}
+
+.content .content-container .input .input_buttom input {
+    width: 79px;
+    height: 42px;
+    color: #46484b;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0;
+    border: 1px solid #8d9394;
+    outline: medium;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-appearance:none;
+}
+/*搜索框部分 - end -*/
+
+
+/*导航条 - start - */
+.container .mobile-nav {
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+
+.container .mobile-nav .nav-item {
+    display: inline-block;
+    width: 13%;
+    margin-left: 3%;
+    float: left;
+    font-size: 13px;
+    color: #262626;
+}
+
+.container .mobile-nav .nav-item a img {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+}
+
+.container .mobile-nav .nav-item a p {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+/*导航条 - end - */
+
+/*常用站点 - start - */
+.container .web-site {
+    height: 120px;
+    margin: 35px 10px;
+    border: 1px solid #d9dde2;
+}
+
+.container .web-site .web-site-top .web-site-top-left {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container .web-site .web-site-top span {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.container .web-site .web-site-top img {
+    height: 14px;
+}
+
+.container .web-site .web-site-top a {
+    float: right;
+    margin: 5px;
+}
+
+.container .web-site .web-site-top a img {
+    margin: 5px;
+}
+
+.container .web-site .item-container li {
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin: 0 3% 18px 2%;
+    font-size: 14px;
+    text-align: center;
+    color: #262626;
+}
+/*常用站点 - end - */
+
+/*实时新闻 - start -*/
+.container .news {
+    height: 135px;
+    margin: 35px 10px;
+    border: 1px solid #d9dde2;
+}
+
+.container .news .news-top .news-top-left {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container .news .news-top span {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.container .news .news-top img {
+    height: 14px;
+}
+
+.container .news .news-top a {
+    float: right;
+    margin: 5px;
+}
+
+.container .news .news-top a img {
+    margin: 5px;
+}
+
+.container .news .item-container li {
+    list-style: none;
+    display: inline-block;
+    width: 43%;
+    float: left;
+    margin: 0 2% 18px 2%;
+    font-size: 14px;
+    text-align: center;
+    color: #262626;
+}
+
+/*实时新闻 - end -*/
+/*生活服务 - start -*/
+.container .life {
+    position: relative;
+    height: 270px;
+    margin: 35px 10px 0 10px;
+    border: 1px solid #d9dde2;
+}
+
+.container .life .life-top .life-top-left {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container .life .life-top span {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.container .life .life-top img {
+    height: 14px;
+}
+
+.container .life .life-top a {
+    float: right;
+    margin: 5px;
+}
+
+.container .life .life-top a img {
+    margin: 5px;
+}
+
+.container .life .life-center {
+    height: 32px;
+    margin: 8px 14px 14px 14px;
+}
+
+.container .life .life-center span {
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    color: #262626;
+    margin-left: 10px;
+}
+
+.container .life .life-center .life-center-buttom {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.container .life .life-center .life-center-buttom img {
+    width: 17px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.container .life .life-center .life-center-buttom a span {
+    position: relative;
+    bottom: 4px;
+    right: 5px;
+}
+
+.container .life .item-container li {
+    display: inline-block;
+    width: 21%;
+    margin-left: 3%;
+    float: left;
+    font-size: 13px;
+    color: #262626;
+    text-align: center;
+}
+
+.container .life .item-container li img {
+    width: 42px;
+}
+
+/*生活服务 - end -*/
+
+
+/*底部 - start -*/
+.container .all p {
+    height: 48px;
+    line-height: 48px;
+    margin: 0 10px 10px 10px;
+    position: relative;
+    bottom: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+}
+
+.container .all img {
+    margin-left: 10px;
+    width: 15px;
+}
+
+.container .setting p {
+    height: 47px;
+    line-height: 48px;
+    margin: 0 10px 10px 10px;
+    position: relative;
+    bottom: 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.container .setting p a {
+    color: #0058d2;
+}
+
+.container .setting img {
+    margin-right: 10px;
+    width: 16px;
+}
+
+.container .other {
+    margin: 10px;
+}
+
+.container .other div {
+    height: 33px;
+    line-height: 33px;
+}
+
+.container .other img.left {
+    width: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.container .other img.right {
+    width: 6px;
+    float: right;
+    margin-top: 10px;
+}
+
+.container .other div {
+    font-size: 13px;
+    color: #555;
+}
+
+.container .version {
+    height: 26px;
+    margin: 15px 10px;
+}
+
+.container .version .left a,
+.container .version .right a {
+    color: #555;
+}
+
+.container .version .left {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 44%;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-right: 10%;
+}
+
+.container .version .right {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 44%;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.container .version .footer {
+    margin: 10px 10px 15px 10px;
+    text-align: center;
+}
+
+.container .version .footer a {
+    font-size: 10px;
+    color: #aaa;
+}
+
+/*底部 - end -*/
